@@ -1,0 +1,33 @@
+CREATE TABLE admin(
+id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50),
+password VARCHAR(255)
+);
+
+
+INSERT INTO admin VALUES
+(NULL,'admin','12345');
+
+
+CREATE TABLE booking(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nama VARCHAR(100),
+hp VARCHAR(20),
+alamat TEXT,
+layanan VARCHAR(100),
+tanggal DATE
+);
+
+
+CREATE TABLE galeri(
+id INT AUTO_INCREMENT PRIMARY KEY,
+judul VARCHAR(100),
+foto VARCHAR(100)
+);
+
+
+CREATE TABLE testimoni(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nama VARCHAR(100),
+pesan TEXT
+);
